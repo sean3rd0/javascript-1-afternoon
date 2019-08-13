@@ -3,35 +3,35 @@
 //Create a variable called myName that is a string data type
 
 //Code here
-let myName = "Sean Scott";
+let myName = "Seanerdoo goin through the second time";
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
 //Code here
-let myAge = 24
+let myAge = 24;
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
 //Code here
-let lovesCode = true
+let lovesCode = true; 
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
 //Code here
-greatestFear = undefined
+let greatestFear;
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-//Code here
-devMountainGoal = null
+//Code here 
+let devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -41,11 +41,10 @@ devMountainGoal = null
 //plus the value of the name parameter.
 
 //Code here
-function greeting (name){
-  return `Hello, ${name}`;
-}
+function greeting (name) {
+  return "Hello, " + (name)
+};
 
-greeting("Sean")
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
@@ -53,17 +52,16 @@ greeting("Sean")
 
 //Code Here
 let newGreeting = function (name) {
-  return `Hello, ${name}`
-}
-
+  return "Hello, " + (name)
+};
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here 
-let groceries = ["apples", "milk", "eggs", "bread"]
+//Code Here
+let groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -73,13 +71,19 @@ let groceries = ["apples", "milk", "eggs", "bread"]
 //and goodBoy (a boolean).
 
 //Code Here
-let dog = {name: "Cuddi", color: 'black & white', age: 8, goodBoy:true};
+const dog = {
+  name: 'Rufus', 
+  color: 'baby blue',
+  age: 43, 
+  goodBoy: true
+};
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
-devMountainClassPet = dog.name
+let devMountainClassPet = dog.name;
+
 //////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter.
@@ -90,15 +94,13 @@ devMountainClassPet = dog.name
 // with NAMEPARAM being the name parameter being passed in
 
 // Code here
-function nameCheck (NAMEPARAM){
-  if (NAMEPARAM === 'Steven'){
-  return "What is up Steven?"} 
-  else if (NAMEPARAM === 'Bryan'){
-  return "Hey Bryan!"}
-  else return `Cool name, ${NAMEPARAM}`
+let nameCheck = function (name) {
+  if (name === 'Steven') {
+    return 'What is up Steven?'} else if (
+      name === 'Bryan') {
+        return 'Hey Bryan!'} else return `Cool name, ${name}`
+};
 
-}
-nameCheck ()
 //////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
@@ -106,17 +108,15 @@ nameCheck ()
 // The add function should return the two parameters added together
 
 //Code Here
-let add = function (a, b){
-  return a+b;
-
-  add ()
-}
-
+let add = function (n1, n2) {
+  return n1 + n2
+};
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
-var mathSum = add (3, 4)
+//Code Here 
+let mathSum = add (3,4); 
+
 //////////////////PROBLEM 12////////////////////
 
 //Write a function called faveColorFinder that takes in one parameter called color
@@ -127,25 +127,14 @@ var mathSum = add (3, 4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 // Code here
-function faveColorFinder(color){
-  if (color === 'red'){return 'red is a great color'}
-  else if (color === 'green'){return 'green is a solid favorite color'}
-  else if (color === 'black'){return 'so trendy'}
-  else return 'you need to evaluate your favorite color choice'
-} 
-faveColorFinder() 
-/*ORRRRRRR ORRRRR ORR OR OR OR OR OR OR
-YOU COULD DO: 
-function faveColorFinder(color){
-  if (color === red){return 'red is a great color'}
-  else if (color === green){return 'green is a solid favorite color'}
-  else if (color === black){return 'so trendy'}
-  else return 'you need to evaluate your favorite color choice'
-} 
-var red = "red"
-var green = "green"
-var black = "black"
-faveColorFinder()*/
+let faveColorFinder = function (color) {
+  if (color === 'red') {
+    return 'red is a great color'} else if (
+      color === 'green') {
+        return 'green is a solid favorite color'} else if (
+          color === 'black') {
+            return 'so trendy'} else return 'you need to evaluate your favorite color choice'
+          };
 
 //////////////////PROBLEM 13////////////////////
 
@@ -184,14 +173,14 @@ let pondScope = ["duck", "realDuck"];
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
-age = 24
+// Code Here 
+let age = 24;
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-age = age++
+age++;
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
-age = 999
+age = 999;
